@@ -1,6 +1,6 @@
 FROM golang:1.23.4-bullseye
 
-ARG EVTEST_VERSION=evtest-1.35
+ARG EVTEST_VERSION=1.35
 ENV EVTEST_VERSION=$EVTEST_VERSION
 
 RUN git clone https://gitlab.freedesktop.org/libevdev/evtest.git/ /go/src/github.com/freedesktop/evtest && \
