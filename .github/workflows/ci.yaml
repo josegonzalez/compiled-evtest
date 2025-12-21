@@ -43,7 +43,7 @@ jobs:
           mv bin/${{ matrix.architecture }}/evtest evtest-${{ matrix.architecture }}
 
       - name: Attest Build Provenance
-        uses: actions/attest-build-provenance@v3.0.0
+        uses: actions/attest-build-provenance@v3.1.0
         with:
           subject-path: "evtest-${{ matrix.architecture }}"
 
